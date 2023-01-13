@@ -22,7 +22,6 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  overflow-x: hidden;
 }
 
 /* || UTILITY CLASSES */
@@ -50,12 +49,12 @@ body {
 /* call-to-action link */
 .cta-link {
   display: inline-block;
-  padding: 20px 50px;
+  padding: 1.25rem 3.125rem;
   border: 1px solid var(--green-text-color);
   border-radius: 4px;
   background-color: var(--green-text-color);
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   transition: opacity 200ms ease-in;
 }
 
@@ -67,31 +66,31 @@ body {
   margin-bottom: 40px;
   font-family: 'Georgia', serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 157%;
 }
 
 .section-subtitle {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 157%;
   color: var(--main-text-color);
 }
 
 .section-text {
   max-width: 647px;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
   color: var(--main-text-color);
 }
 
 /* font awesome icons */
 .fa {
-  padding: 15px;
-  font-size: 25px;
-  width: 25px;
+  padding: 0.9375rem;
+  font-size: 1.5625rem;
+  width: 1.5625rem;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 0.3125rem 0.125rem;
   border-radius: 50%;
   transition: opacity 200ms ease-in;
 }
@@ -108,7 +107,7 @@ body {
 }
 
 .download-link {
-  width: 216px;
+  width: 13.5rem;
 }
 
 /* || HEADER STYLES */
@@ -129,6 +128,8 @@ body {
 /* header navigation */
 .header__nav-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .header__nav-item {
@@ -136,7 +137,7 @@ body {
 }
 
 .header__nav-item > a {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--nav-link-color);
   transition: color 200ms ease-in;
 }
@@ -147,7 +148,7 @@ body {
 
 /* sign-in & sign-up links */
 .header__login-nav {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .header__sign-in {
@@ -180,7 +181,7 @@ body {
 .hero__title {
   margin-bottom: 40px;
   font-family: 'Georgia', serif;
-  font-size: 65px;
+  font-size: 4.0625rem;
   font-weight: 700;
   line-height: 74px;
   color: var(--green-text-color);
@@ -188,7 +189,7 @@ body {
 
 .hero__text {
   margin-bottom: 40px;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 144.5%;
   color: var(--lighter-text-color);
 }
@@ -202,6 +203,8 @@ body {
 .about__text {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .about__title {
@@ -213,7 +216,8 @@ body {
 .about__cards {
   margin-top: 145px;
   display: flex;
-  gap: 30px 95px;
+  gap: 30px 55px;
+  flex-wrap: wrap;
 }
 
 .about__card {
@@ -230,14 +234,14 @@ body {
 
 .about__card-subtitle {
   max-width: 647px;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
   color: var(--main-text-color);
 }
 
 .about__card-number {
   font-family: "Georgia", serif;
-  font-size: 150px;
+  font-size: 9.375rem;
   letter-spacing: 10px;
   line-height: 150%;
   color: rgba(1, 153, 109, 0.2);
@@ -245,7 +249,7 @@ body {
 
 .about__card-title {
   font-family: "Georgia", serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   line-height: 150%;
   color: #000;
@@ -277,7 +281,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px 60px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .story__text {
@@ -291,7 +296,7 @@ body {
 
 .story__subtitle {
   margin-bottom: 40px;
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 157%;
   color: #fff;
 }
@@ -303,6 +308,7 @@ body {
   padding: 120px 10px 168px;
   display: flex;
   gap: 30px 87px;
+  flex-wrap: wrap;
 }
 
 .product__image {
@@ -327,7 +333,7 @@ body {
 
 .product__card-title {
   margin-bottom: 3px;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 157%;
   color: #000;
 }
@@ -356,7 +362,7 @@ body {
 
 .product__card-name {
   margin-bottom: 20px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .product__card-text {
@@ -368,7 +374,7 @@ body {
 .product__card-list {
   text-align: left;
   list-style-type: disc;
-  font-size: 10px;
+  font-size: 0.625rem;
   position: relative;
   left: 15px;
 }
@@ -401,10 +407,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-}
-
-.footer__container > * {
-  flex-basis: 33.3333%;
+  flex-wrap: wrap;
 }
 
 /* footer navigation */
@@ -415,7 +418,7 @@ body {
 
 .footer__nav-item {
   margin-bottom: 60px;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
   color: #fff;
 }
@@ -424,8 +427,8 @@ body {
 .footer__social {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
   gap: 45px;
+  flex-wrap: wrap;
 }
 
 .footer__download {
@@ -433,10 +436,11 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer__download-note {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 124.5%;
   letter-spacing: 0.005em;
   color: #ffffff;
